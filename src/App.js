@@ -3,13 +3,22 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+    stuff: 4
+  };
+
   render() {
+    const { stuff } = this.state;
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <p>{stuff}</p>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit
+            <code>src/App.js</code>
+            and save to reload.
           </p>
           <a
             className="App-link"
